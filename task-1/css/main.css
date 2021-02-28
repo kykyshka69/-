@@ -1,0 +1,106 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+ul {
+  padding: 0;
+  margin-bottom: 20px;
+  width: 300px;
+  height: 200px;
+}
+ul:hover {
+  cursor: pointer;
+}
+li {
+  list-style: none;
+  height: 100px;
+}
+.wrapper {
+  margin: 0 50px;
+}
+
+.ukrainian-color-blue {
+  background-color: rgb(56, 127, 233);
+}
+.ukrainian-color-yellow {
+  background-color: rgb(215, 233, 56);
+}
+
+.flag-japan {
+  position: relative;
+}
+.japan-color-white {
+  background-color: rgb(255, 255, 255);
+}
+.japan-color-white::before {
+  content: "";
+  width: 130px;
+  height: 130px;
+  position: absolute;
+  left: 85px;
+  top: 35px;
+  border-radius: 50%;
+  background-color: rgb(242, 52, 52);
+}
+
+.flag-iceland {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgb(242, 52, 52);
+}
+
+.flag-iceland > li {
+  background-color: rgb(52, 96, 242);
+}
+
+.iceland-first-cube {
+  width: 115px;
+  height: 90px;
+  border-bottom: 15px solid white;
+  border-right: 15px solid white;
+}
+
+.iceland-second-cube {
+  margin-left: 20px;
+  width: 165px;
+  height: 90px;
+  border-bottom: 15px solid white;
+  border-left: 15px solid white;
+}
+
+.iceland-third-cube {
+  margin-top: 20px;
+  width: 115px;
+  height: 90px;
+  border-top: 15px solid white;
+  border-right: 15px solid white;
+}
+
+.iceland-last-cube {
+  margin: 20px 0px 0px 20px;
+  width: 165px;
+  height: 90px;
+  border-top: 15px solid white;
+  border-left: 15px solid white;
+}
+
+.flag-czech {
+  position: relative;
+}
+
+.czech-color-white {
+  background-color: rgb(255, 255, 255);
+}
+.czech-color-blue {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  border: 100px solid transparent;
+  border-left: 150px solid rgb(52, 96, 242);
+  height: 200px;
+}
+
+.czech-color-red {
+  background-color: rgb(242, 52, 52);
+}
